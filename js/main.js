@@ -1,4 +1,4 @@
-/* TechShare English Site — shared render logic */
+/* ptblog English Site — shared render logic */
 (function () {
   var S = window.SITE_DATA;
   if (!S) return;
@@ -48,11 +48,6 @@
     document.getElementById('res-grid').innerHTML = S.resources
       .slice().sort(function (a, b) { return b.hot - a.hot; }).slice(0, 6)
       .map(resCard).join('');
-    document.getElementById('tool-grid').innerHTML = S.tools.map(function (t) {
-      return '<div class="tool-card" onclick="alert(\'This tool runs on the self-hosted backend. Deploy the full platform to enable it.\')">'
-        + '<span class="tool-ico">' + coverSvg(t.id === 't2' || t.id === 't3' ? 'teal' : 'green') + '</span>'
-        + '<h3>' + esc(t.name) + '</h3><p>' + esc(t.desc) + '</p></div>';
-    }).join('');
   }
 
   /* ---------- list ---------- */
@@ -101,7 +96,7 @@
     if (!r) {
       article.innerHTML = '<h1>Resource not found</h1><p>The resource may have been removed.</p>';
     } else {
-      document.title = r.title + ' — TechShare';
+      document.title = r.title + ' — ptblog';
       document.getElementById('crumbs').innerHTML = '<a href="index.html">Home</a> / <a href="resources.html?cat=' + r.category_id + '">' + esc(catName(r.category_id)) + '</a> / ' + esc(r.title);
       article.innerHTML = '<h1>' + esc(r.title) + '</h1>'
         + '<p class="sum">' + esc(r.summary) + '</p>'
