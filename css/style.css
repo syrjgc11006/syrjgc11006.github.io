@@ -1,4 +1,4 @@
-/* TechShare English Site — desktop-first, GitHub Pages static */
+/* ptblog English Site — desktop-first, GitHub Pages static */
 :root {
   --green: #166534;
   --green-dark: #0F4524;
@@ -130,6 +130,25 @@ img { max-width: 100%; display: block; }
 .tool-card h3 { font-size: 16px; }
 .tool-card p { color: var(--ink-soft); font-size: 13px; flex: 1; }
 .tool-note { font-size: 12px; color: var(--ink-soft); }
+
+/* ---------- about / open-source section ---------- */
+.about-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px; }
+.about-card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px; display: flex; flex-direction: column; gap: 12px;
+}
+.about-card h3 { font-size: 18px; }
+.about-card p { color: var(--ink-soft); font-size: 14px; line-height: 1.7; }
+.about-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.about-list li { position: relative; padding-left: 20px; font-size: 14px; color: var(--ink); }
+.about-list li::before { content: ""; position: absolute; left: 0; top: 8px; width: 8px; height: 8px; border-radius: 2px; background: var(--green); }
+.stack-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.stack-chips span {
+  background: var(--green-light); color: var(--green-dark); font-size: 12.5px; font-weight: 600;
+  padding: 5px 12px; border-radius: var(--radius-sm); border: 1px solid #CFE2D6;
+}
+.about-note { margin-top: 4px; }
+.foot-links a { color: #fff; font-weight: 600; }
 
 /* ---------- footer ---------- */
 footer { background: var(--green-dark); color: rgba(255,255,255,.8); margin-top: 40px; }
