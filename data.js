@@ -1,10 +1,9 @@
 /* TechShare English Site — static dataset (mirrors the Chinese edition seed) */
 var SITE_DATA = {
   brand: 'TechShare',
-  tagline: 'Open learning resources & industrial source code',
+  tagline: 'Developer blog & learning resources',
   categories: [
     { id: 'c1', name: 'Learning Materials', desc: 'Interview prep, deep-dive tutorials and career roadmaps for .NET / C# engineers.' },
-    { id: 'c2', name: 'Source Code', desc: 'Ready-to-run industrial and web projects: WPF hosts, Vue admin, Go microservices.' },
     { id: 'c3', name: 'Technical Articles', desc: 'Protocol analysis, performance tuning and architecture practice from real projects.' }
   ],
   resources: [
@@ -33,30 +32,6 @@ var SITE_DATA = {
       hot: 2033, outer_link: '', accent: 'gold'
     },
     {
-      id: 'r5', category_id: 'c2', title: 'Industrial HMI Host Built on .NET 8 + AntControl',
-      summary: 'A complete WPF host: MVVM architecture, Ant Design style components, Modbus TCP / serial communication and 3D configuration visualization — compiles and runs as-is.',
-      content: '<h3>Project Overview</h3><p>A production-grade WPF industrial host following MVVM and Ant Design conventions, with login, RBAC permissions, device communication, real-time curves and an alarm dashboard.</p><h3>Key Points</h3><ul><li>MVVM + Prism modularity</li><li>Modbus TCP / RS485 communication wrapper</li><li>OpcUa client and PLC simulator</li></ul><h3>Layout</h3><pre><code>src/\n  Views/       windows and pages\n  ViewModels/  binding models\n  Services/    device & communication services\n  Models/      data models</code></pre><table><tr><th>Module</th><th>Description</th></tr><tr><td>Login</td><td>Account login + token renewal</td></tr><tr><td>Monitor</td><td>Real-time monitoring and alerts</td></tr></table>',
-      hot: 1286, outer_link: 'https://github.com/', accent: 'green'
-    },
-    {
-      id: 'r6', category_id: 'c2', title: 'Vue3 + Element Plus Admin Template',
-      summary: 'RBAC permissions, dynamic routes, dark mode and multi-tab layout — a modern admin template built with Vite.',
-      content: '<h3>Highlights</h3><ul><li>Vite + Vue3 + TypeScript</li><li>Dynamic routes and button-level permissions</li><li>Axios wrapper with request retry</li></ul><h3>Quick Start</h3><pre><code>npm create vite@latest admin && cd admin\nnpm i element-plus pinia vue-router</code></pre>',
-      hot: 1520, outer_link: 'https://gitee.com/', accent: 'teal'
-    },
-    {
-      id: 'r7', category_id: 'c2', title: 'Go + Gin Microservice Scaffold (JWT + Middleware + Swagger)',
-      summary: 'A production-ready Go microservice template with logging, config center, tracing and Docker deployment orchestration.',
-      content: '<h3>Layout</h3><pre><code>cmd/      entrypoints\ninternal/ business code\npkg/      shared components\ndeploy/   orchestration</code></pre><h3>Built-in Capabilities</h3><ul><li>JWT auth middleware</li><li>zap structured logging</li><li>OpenTelemetry tracing</li></ul>',
-      hot: 720, outer_link: 'https://github.com/', accent: 'gold'
-    },
-    {
-      id: 'r8', category_id: 'c2', title: 'Industrial Vision Inspection Host (Hikvision Camera + OpenCV)',
-      summary: 'End-to-end project: camera SDK capture, image preprocessing, defect detection algorithms and result reporting, supporting high-concurrency inspection pipelines.',
-      content: '<h3>Inspection Pipeline</h3><pre><code>capture -> grayscale -> filter -> threshold -> feature extract -> verdict</code></pre><h3>Integrated Components</h3><ul><li>Hikvision MVS SDK</li><li>OpenCV / Emgu CV</li><li>MQTT result reporting</li></ul>',
-      hot: 1680, outer_link: '', accent: 'green'
-    },
-    {
       id: 'r9', category_id: 'c3', title: 'Modbus TCP Protocol Explained with Debugging Practice',
       summary: 'From frame structure and function codes to exception codes, with packet-capture tools — including Wireshark filters and common pitfalls.',
       content: '<h3>Protocol Basics</h3><p>Modbus TCP carries Modbus frames over Ethernet, default port 502. The MBAP header consists of transaction ID + protocol ID + length + unit ID.</p><h3>Common Function Codes</h3><table><tr><th>Code</th><th>Meaning</th></tr><tr><td>0x03</td><td>Read holding registers</td></tr><tr><td>0x06</td><td>Write single register</td></tr><tr><td>0x10</td><td>Write multiple registers</td></tr></table><h3>Capture Filter</h3><pre><code>tcp.port == 502 && modbus</code></pre>',
@@ -80,12 +55,6 @@ var SITE_DATA = {
       content: '<h3>Core Mechanisms</h3><ul><li>Log-segment storage</li><li>ISR replica sync</li><li>Consumer rebalancing</li></ul><h3>Selection Advice</h3><p>Choose Kafka for high throughput and log ingestion; choose RabbitMQ for complex routing and low-latency scenarios.</p>',
       hot: 647, outer_link: '', accent: 'teal'
     }
-  ],
-  tools: [
-    { id: 't1', name: 'Remove AI Watermark', desc: 'Automatically detect and erase corner / edge watermarks from AI-generated images.' },
-    { id: 't2', name: 'Word to PDF', desc: 'Convert .doc / .docx documents to PDF with one upload.' },
-    { id: 't3', name: 'Word to Images', desc: 'Render a Word document into per-page PNG images.' },
-    { id: 't4', name: 'PDF to Images', desc: 'Convert every page of a PDF into high-quality PNG images.' }
   ]
 };
 

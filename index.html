@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechShare — Open Learning Resources &amp; Industrial Source Code</title>
-  <meta name="description" content="TechShare: free learning materials, deep technical articles and ready-to-run industrial source code for .NET, WPF, Redis, MySQL and more.">
+  <title>TechShare — Open-Source Developer Blog &amp; Learning Resources</title>
+  <meta name="description" content="TechShare is an open-source developer blog and learning-resources project: deep technical articles, interview banks and hands-on tutorials for .NET, WPF, Redis, MySQL, Go. MIT-licensed on GitHub.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23166534'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='bold' fill='%23fff' text-anchor='middle' font-family='Arial'%3ETS%3C/text%3E%3C/svg%3E">
 </head>
@@ -15,10 +15,8 @@
       <nav class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="resources.html?cat=c1">Learning</a>
-        <a href="resources.html?cat=c2">Source Code</a>
         <a href="resources.html?cat=c3">Articles</a>
-        <a href="#tools">Tools</a>
-        <a class="nav-gh" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a class="nav-gh" href="https://github.com/syrjgc11006/syrjgc11006.github.io" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -26,20 +24,51 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1>Open learning resources &amp; industrial source code</h1>
-        <p>Hands-on tutorials, interview banks, protocol deep-dives and production-ready projects for .NET, WPF, Redis, MySQL, Go and more — free to browse.</p>
+        <h1>A developer blog &amp; open-source learning resources</h1>
+        <p>TechShare is an open-source full-stack project by a software developer: deep technical articles, interview banks, hands-on tutorials and architecture notes for .NET, WPF, Redis, MySQL, Go — free to read, MIT-licensed on GitHub.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="resources.html">Browse Resources</a>
-          <a class="btn btn-ghost" href="#categories">Explore Categories</a>
+          <a class="btn btn-primary" href="resources.html">Browse Articles</a>
+          <a class="btn btn-ghost" href="#about">About this project</a>
         </div>
         <div class="hero-stats">
           <div><b id="stat-res">0</b><span>Resources</span></div>
           <div><b id="stat-cat">0</b><span>Categories</span></div>
-          <div><b>Free</b><span>To browse</span></div>
+          <div><b>MIT</b><span>Open source</span></div>
         </div>
       </div>
       <div class="hero-panel" id="hero-panel">
         <h3>Featured topics</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about" style="background:#fff;border-bottom:1px solid var(--line);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>An open-source software project</h2>
+          <p>TechShare is a real, maintained developer project — source code and full stack are public on GitHub.</p>
+        </div>
+        <a class="section-more" href="https://github.com/<your-github-username>/techshare" target="_blank" rel="noopener">View source on GitHub &rarr;</a>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>What is TechShare</h3>
+          <p>A full-stack learning-resources platform designed and developed by an industrial software engineer. It is not a static brochure — it ships with a Node.js backend, MySQL persistence, H5 and mini-program clients, an admin panel, and AI-powered document tools.</p>
+          <ul class="about-list">
+            <li>Long-form technical articles &amp; interview banks for .NET / WPF / Redis / MySQL / Go</li>
+            <li>Hands-on tutorials &amp; weekly engineering notes from real projects</li>
+            <li>Deep-dives into protocols, performance tuning and architecture practice</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Built with</h3>
+          <div class="stack-chips">
+            <span>Node.js</span><span>MySQL</span><span>WPF / C#</span><span>Redis</span>
+            <span>Go</span><span>HTML5 / CSS3 / JS</span><span>WeChat Mini Program</span>
+          </div>
+          <p class="about-note">Open source &amp; free for learning. Code, docs and demo data are all in the public repository — contributions and issues welcome.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -70,23 +99,10 @@
     </div>
   </section>
 
-  <section class="section" id="tools" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Online tools</h2>
-          <p>Document and image utilities available in the full deployed version.</p>
-        </div>
-      </div>
-      <div class="tool-grid" id="tool-grid"></div>
-      <p class="tool-note" style="margin-top:14px;">The static preview on GitHub Pages shows the catalog only; the interactive tools run on the self-hosted backend.</p>
-    </div>
-  </section>
-
   <footer>
     <div class="container foot-inner">
-      <span>TechShare — open learning resources &amp; industrial source code. Content is shared for learning purposes.</span>
-      <a href="https://github.com/" target="_blank" rel="noopener">GitHub Repository</a>
+      <span>TechShare — open-source developer blog &amp; learning resources by a software developer. Content is shared for learning purposes.</span>
+      <span class="foot-links"><a href="https://github.com/<your-github-username>/techshare" target="_blank" rel="noopener">GitHub Repository</a></span>
     </div>
   </footer>
 
