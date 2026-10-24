@@ -1,6 +1,6 @@
-/* TechShare English Site — static dataset (mirrors the Chinese edition seed) */
+/* ptblog English Site — static dataset (mirrors the Chinese edition seed) */
 var SITE_DATA = {
-  brand: 'TechShare',
+  brand: 'ptblog',
   tagline: 'Developer blog & learning resources',
   categories: [
     { id: 'c1', name: 'Learning Materials', desc: 'Interview prep, deep-dive tutorials and career roadmaps for .NET / C# engineers.' },
