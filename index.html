@@ -3,106 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ptblog — Open-Source Developer Blog &amp; Learning Resources</title>
-  <meta name="description" content="ptblog is an open-source developer blog and learning-resources project: deep technical articles, interview banks and hands-on tutorials for .NET, WPF, Redis, MySQL, Go. MIT-licensed on GitHub.">
+  <title>PT · Tech Blog</title>
+  <meta name="description" content="PT — personal, non-commercial technical blog and project portfolio. Learning in C#/.NET, WPF, Go, MySQL/Redis, OpenCV computer vision and industrial protocols (Modbus TCP).">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23166534'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='bold' fill='%23fff' text-anchor='middle' font-family='Arial'%3ETS%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23166534'/%3E%3Ctext x='16' y='22' font-size='13' font-weight='bold' fill='%23fff' text-anchor='middle' font-family='Arial'%3EPT%3C/text%3E%3C/svg%3E">
 </head>
 <body>
   <header class="topnav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html"><span class="brand-mark">TS</span>ptblog</a>
+      <a class="brand" href="#top"><span class="brand-mark">PT</span>ptblog</a>
       <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="resources.html?cat=c1">Learning</a>
-        <a href="resources.html?cat=c3">Articles</a>
-        <a class="nav-gh" href="https://github.com/syrjgc11006/syrjgc11006.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="#about">About</a>
+        <a href="#notes">Notes</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <h1>A developer blog &amp; open-source learning resources</h1>
-        <p>ptblog is an open-source full-stack project by a software developer: deep technical articles, interview banks, hands-on tutorials and architecture notes for .NET, WPF, Redis, MySQL, Go — free to read, MIT-licensed on GitHub.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="resources.html">Browse Articles</a>
-          <a class="btn btn-ghost" href="#about">About this project</a>
-        </div>
-        <div class="hero-stats">
-          <div><b id="stat-res">0</b><span>Resources</span></div>
-          <div><b id="stat-cat">0</b><span>Categories</span></div>
-          <div><b>MIT</b><span>Open source</span></div>
-        </div>
+  <main id="top">
+    <!-- hero / about -->
+    <section class="hero" id="about">
+      <div class="container">
+        <h1 id="hero-greeting"></h1>
+        <p class="hero-intro" id="hero-intro"></p>
+        <p class="hero-about" id="hero-about"></p>
+        <div class="stack-chips" id="stack-chips"></div>
       </div>
-      <div class="hero-panel" id="hero-panel">
-        <h3>Featured topics</h3>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="about" style="background:#fff;border-bottom:1px solid var(--line);">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>An open-source software project</h2>
-          <p>ptblog is a real, maintained developer project — source code and full stack are public on GitHub.</p>
-        </div>
-        <a class="section-more" href="https://github.com/syrjgc11006/syrjgc11006.github.io" target="_blank" rel="noopener">View source on GitHub &rarr;</a>
+    <!-- learning notes -->
+    <section class="section" id="notes">
+      <div class="container">
+        <h2>📚 Learning Notes</h2>
+        <p class="sec-sub">What I use and study in my daily work.</p>
+        <div class="notes-grid" id="notes-grid"></div>
       </div>
-      <div class="about-grid">
-        <div class="about-card">
-          <h3>What is ptblog</h3>
-          <p>A full-stack learning-resources platform designed and developed by an industrial software engineer. It is not a static brochure — it ships with a Node.js backend, MySQL persistence, H5 and mini-program clients, an admin panel, and AI-powered document tools.</p>
-          <ul class="about-list">
-            <li>Long-form technical articles &amp; interview banks for .NET / WPF / Redis / MySQL / Go</li>
-            <li>Hands-on tutorials &amp; weekly engineering notes from real projects</li>
-            <li>Deep-dives into protocols, performance tuning and architecture practice</li>
-          </ul>
-        </div>
-        <div class="about-card">
-          <h3>Built with</h3>
-          <div class="stack-chips">
-            <span>Node.js</span><span>MySQL</span><span>WPF / C#</span><span>Redis</span>
-            <span>Go</span><span>HTML5 / CSS3 / JS</span><span>WeChat Mini Program</span>
-          </div>
-          <p class="about-note">Open source &amp; free for learning. Code, docs and demo data are all in the public repository — contributions and issues welcome.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="categories">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Categories</h2>
-          <p>Three tracks — pick one and dive in.</p>
-        </div>
-        <a class="section-more" href="resources.html">View all resources</a>
+    <!-- projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>💻 Projects</h2>
+        <p class="sec-sub">Software development projects and research experiments.</p>
+        <div class="projects-grid" id="projects-grid"></div>
       </div>
-      <div class="cat-grid" id="cat-grid"></div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="resources">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Popular resources</h2>
-          <p>Top content by community heat.</p>
+    <!-- contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2>📮 Contact</h2>
+          <p>Follow my learning and project records on GitHub. Feel free to reach out for industrial software collaboration.</p>
+          <p class="contact-github">GitHub: <a href="https://github.com/syrjgc11006" target="_blank" rel="noopener">syrjgc11006</a></p>
         </div>
-        <a class="section-more" href="resources.html">See the full list</a>
       </div>
-      <div class="res-grid" id="res-grid"></div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <div class="container foot-inner">
-      <span>ptblog — open-source developer blog &amp; learning resources by a software developer. Content is shared for learning purposes.</span>
-      <span class="foot-links"><a href="https://github.com/syrjgc11006/syrjgc11006.github.io" target="_blank" rel="noopener">GitHub Repository</a></span>
+      <span>© 2026 <span id="foot-author">PT</span> · Built with GitHub Pages</span>
     </div>
   </footer>
 
